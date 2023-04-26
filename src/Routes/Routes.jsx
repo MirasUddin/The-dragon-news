@@ -17,7 +17,7 @@ import News from '../Pages/News/News';
           {
             path: '/category/:id',
             element: <Category/>,
-            loader: ({params}) => fetch(`http://localhost:5000/categories${params.id}`)
+            loader: ({params}) => fetch(`http://localhost:5000/categories/${params.id}`)
           },
         ]
     },
