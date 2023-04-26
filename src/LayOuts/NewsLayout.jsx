@@ -5,16 +5,13 @@ import { Col, Container, Row } from 'react-bootstrap';
 import RightNav from '../Pages/Shared/RightNav/RightNav';
 import LeftNav from '../Pages/Shared/leftNav/leftNav';
 import { Outlet } from 'react-router-dom';
-const Main = () => {
+const NewsLayout = () => {
     return (
         <div>
-            <Header />
+             <Header />
             <Container>
                 <Row>
-                    <Col lg={3}>
-                        <LeftNav/>
-                    </Col>
-                    <Col lg={6}>
+                    <Col lg={9}>
                             <Outlet/>
                     </Col>
                     <Col lg={3}>
@@ -27,4 +24,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default NewsLayout;
